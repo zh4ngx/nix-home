@@ -35,6 +35,8 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
     jetbrains.idea-ultimate
+    jetbrains.rust-rover
+    android-studio
   ];
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
