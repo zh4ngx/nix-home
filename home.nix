@@ -84,6 +84,7 @@
 
   programs.bat.enable = true;
   programs.ripgrep.enable = true;
+  programs.rio.enable = true;
 
   programs.bash.enable = true;
   programs.fish.enable = true;
