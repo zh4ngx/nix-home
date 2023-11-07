@@ -39,6 +39,7 @@
     android-studio
   ];
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
+  nixpkgs.url = "nixpkgs/"
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -93,6 +94,8 @@
     enable = true;
     enableAliases = true;
   };
+
+  programs.firefox.enable = true;
 
   programs.vscode = {
     enable = true;
