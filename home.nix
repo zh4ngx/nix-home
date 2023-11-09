@@ -37,6 +37,8 @@
     jetbrains.idea-ultimate
     jetbrains.rust-rover
     android-studio
+    gnomeExtensions.vitals
+    gnomeExtensions.dash-to-dock
   ];
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
