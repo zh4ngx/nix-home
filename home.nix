@@ -39,6 +39,7 @@
     android-studio
     gnomeExtensions.vitals
     gnomeExtensions.dash-to-dock
+    gnomeExtensions.tray-icons-reloaded
     radeontop
   ];
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
