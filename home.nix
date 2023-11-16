@@ -41,7 +41,6 @@
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.vitals
     radeontop
-    (google-cloud-sdk.withExtraComponents [google-cloud-sdk.components.gke-gcloud-auth-plugin])
   ];
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
