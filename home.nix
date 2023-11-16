@@ -37,10 +37,11 @@
     jetbrains.idea-ultimate
     jetbrains.rust-rover
     android-studio
-    gnomeExtensions.vitals
     gnomeExtensions.dash-to-dock
     gnomeExtensions.tray-icons-reloaded
+    gnomeExtensions.vitals
     radeontop
+    (google-cloud-sdk.withExtraComponents [google-cloud-sdk.components.gke-gcloud-auth-plugin])
   ];
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
