@@ -36,7 +36,6 @@
     # '')
     jetbrains.idea-ultimate
     jetbrains.rust-rover
-    android-studio
     gnomeExtensions.dash-to-dock
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.vitals
