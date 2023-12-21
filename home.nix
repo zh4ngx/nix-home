@@ -100,6 +100,11 @@
 
   programs.firefox.enable = true;
 
+  programs.chromium = {
+    enable = true;
+    package = pkgs.google-chrome;
+  };
+
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
