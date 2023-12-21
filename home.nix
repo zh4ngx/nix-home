@@ -70,7 +70,6 @@
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
     EDITOR = "codium";
-    CHROME_EXECUTABLE = "/var/lib/flatpak/exports/bin/com.google.Chrome";
   };
 
   targets.genericLinux.enable = true;
