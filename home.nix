@@ -34,6 +34,7 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    android-studio
     jetbrains.idea-ultimate
     jetbrains.rust-rover
     gnomeExtensions.dash-to-dock
