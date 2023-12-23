@@ -34,7 +34,6 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-    android-studio
     jetbrains.idea-ultimate
     jetbrains.rust-rover
     gnomeExtensions.dash-to-dock
@@ -69,21 +68,20 @@
   #  /etc/profiles/per-user/andy/etc/profile.d/hm-session-vars.sh
   #
   # if you don't want to manage your shell through Home Manager.
-  home.sessionVariables = {
-    EDITOR = "codium";
-  };
+  home.sessionVariables = { EDITOR = "codium"; };
 
   targets.genericLinux.enable = true;
   xdg.mime.enable = true;
-  xdg.systemDirs.data = [ "${config.home.homeDirectory}/.nix-profile/share/applications" ];
+  xdg.systemDirs.data =
+    [ "${config.home.homeDirectory}/.nix-profile/share/applications" ];
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
   programs.direnv = {
-      enable = true;
-      nix-direnv.enable = true;
-      enableBashIntegration = true;
+    enable = true;
+    nix-direnv.enable = true;
+    enableBashIntegration = true;
   };
 
   programs.bat.enable = true;
@@ -108,18 +106,20 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
-    extensions = with pkgs.vscode-extensions; [ 
+    extensions = with pkgs.vscode-extensions; [
+      arrterian.nix-env-selector
+      dart-code.dart-code
+      dart-code.flutter
+      jnoortheen.nix-ide
+      mkhl.direnv
       rust-lang.rust-analyzer
       tamasfe.even-better-toml
     ];
   };
 
-  programs.emacs = {                              
+  programs.emacs = {
     enable = true;
-    extraPackages = epkgs: [
-      epkgs.nix-mode
-      epkgs.magit
-    ];
+    extraPackages = epkgs: [ epkgs.nix-mode epkgs.magit ];
   };
 
   programs.git = {
@@ -127,21 +127,11 @@
     userName = "Andy Zhang";
     userEmail = "1329212+zhangbanger@users.noreply.github.com";
     extraConfig = {
-      color = {
-        ui = "auto";
-      };
-      push = {
-        default = "simple";
-      };
-      pull = {
-        rebase = true;
-      };
-      branch = {
-        autosetuprebase = "always";
-      };
-      init = {
-        defaultBranch = "main";
-      };
+      color = { ui = "auto"; };
+      push = { default = "simple"; };
+      pull = { rebase = true; };
+      branch = { autosetuprebase = "always"; };
+      init = { defaultBranch = "main"; };
     };
   };
 
