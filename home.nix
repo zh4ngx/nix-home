@@ -68,7 +68,11 @@
   #  /etc/profiles/per-user/andy/etc/profile.d/hm-session-vars.sh
   #
   # if you don't want to manage your shell through Home Manager.
-  home.sessionVariables = { EDITOR = "codium"; };
+  home.sessionVariables = { 
+    EDITOR = "codium";
+    BROWSER = "firefox";
+    TERMINAL = "rio";
+   };
 
   targets.genericLinux.enable = true;
   xdg.mime.enable = true;
@@ -86,7 +90,22 @@
 
   programs.bat.enable = true;
   programs.ripgrep.enable = true;
-  programs.rio.enable = true;
+  programs.rio = {
+    enable = true;
+    settings = {
+      window = {
+        foreground-opacity = 1.0;
+        background-opacity = 0.5;
+        blur = true;
+        height = 720;
+        width = 1280;
+      };
+      shell = {
+        program = "fish";
+        args = [];
+      };
+    };
+  };
 
   programs.bash.enable = true;
   programs.fish.enable = true;
