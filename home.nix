@@ -96,7 +96,7 @@
     settings = {
       window = {
         background-opacity = 0.6;
-        blur = true;
+        # blur = true;
         height = 720;
         width = 1280;
       };
