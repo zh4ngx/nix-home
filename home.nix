@@ -39,6 +39,7 @@
     gnomeExtensions.dash-to-dock
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.vitals
+    qbittorrent
     radeontop
   ];
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
