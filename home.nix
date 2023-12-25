@@ -36,8 +36,8 @@
     # '')
     jetbrains.idea-ultimate
     jetbrains.rust-rover
+    gnomeExtensions.app-indicator
     gnomeExtensions.dash-to-dock
-    gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.vitals
     qbittorrent
     radeontop
