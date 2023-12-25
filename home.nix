@@ -36,7 +36,7 @@
     # '')
     jetbrains.idea-ultimate
     jetbrains.rust-rover
-    gnomeExtensions.app-indicator
+    gnomeExtensions.appindicator
     gnomeExtensions.dash-to-dock
     gnomeExtensions.vitals
     qbittorrent
